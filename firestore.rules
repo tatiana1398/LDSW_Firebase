@@ -1,0 +1,22 @@
+rules_version = '2';
+
+// Reglas de Cloud Firestore para CineCatálogo.
+// Cualquiera puede leer y agregar reseñas, pero solo si los datos son
+// válidos. No se permite modificar ni borrar reseñas desde la app.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /peliculas/{peliculaId}/resenas/{resenaId} {
+      allow read: if true;
+      allow create: if esResenaValida(request.resource.data);
+      allow update, delete: if false;
+    }
+
+    function esResenaValida(r) {
+      return r.keys().hasOnly(['autor', 'calificacion', 'comentario', 'fecha'])
+          && r.autor is string && r.autor.size() > 0 && r.autor.size() <= 40
+          && r.calificacion is int && r.calificacion >= 1 && r.calificacion <= 5
+          && r.comentario is string && r.comentario.size() > 0 && r.comentario.size() <= 500
+          && r.fecha == request.time;
+    }
+  }
+}

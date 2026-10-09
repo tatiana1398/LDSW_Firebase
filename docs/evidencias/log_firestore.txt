@@ -1,0 +1,2 @@
+10-09 15:26:52.166  6317  6317 I flutter : [Firestore] add peliculas/dune-parte-dos/resenas/9vKWO1ul7hNePgUbcQbk -> guardada
+10-09 15:29:47.602  6317  6317 I flutter : [Firestore] peliculas/oppenheimer/resenas/B7jq4pIyuaQynNicuhjo -> pendiente (sin conexión)

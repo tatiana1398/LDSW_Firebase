@@ -1,0 +1,10 @@
+Prueba de las reglas de Firestore con la clave pública de la app (sin privilegios de administrador)
+
+1) Crear una reseña con calificación 9 (fuera del rango 1-5)
+   POST peliculas/oppenheimer/resenas  ->  403 PERMISSION_DENIED
+
+2) Borrar una reseña existente
+   DELETE peliculas/oppenheimer/resenas/B7jq4pIyuaQynNicuhjo  ->  403 PERMISSION_DENIED
+
+3) Leer las reseñas
+   GET peliculas/oppenheimer/resenas  ->  200 OK (1 documento)

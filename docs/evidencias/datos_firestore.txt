@@ -1,0 +1,20 @@
+Consulta a Cloud Firestore (API REST) — proyecto ldsw-cinecatalogo
+
+peliculas/dune-parte-dos/resenas/9vKWO1ul7hNePgUbcQbk
+  autor:        Tatiana Montenegro
+  calificacion: 5
+  comentario:   Una experiencia visual impresionante, con una banda sonora enorme. Hay que verla en cine.
+  fecha:        2026-10-09T20:26:52.240Z
+
+peliculas/dune-parte-dos/resenas/JMFR7HDoqiqTPLRVbcS3
+  autor:        Carlos Ruiz
+  calificacion: 4
+  comentario:   Muy buena secuela. El ritmo de la segunda mitad es excelente.
+  fecha:        2026-10-09T20:28:52Z
+
+peliculas/oppenheimer/resenas/B7jq4pIyuaQynNicuhjo
+  autor:        Luisa Fernanda
+  calificacion: 4
+  comentario:   Gran actuacion de Cillian Murphy. Es larga, pero vale la pena.
+  fecha:        2026-10-09T20:30:02.834Z
+

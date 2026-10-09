@@ -1,0 +1,35 @@
+{
+  "firestore": {
+    "database": "(default)",
+    "rules": "firestore.rules"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "ldsw-cinecatalogo",
+          "appId": "1:549479536930:android:f61bb1aae556e523e1ed7b",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "ldsw-cinecatalogo",
+          "appId": "1:549479536930:ios:7b34feb112e4c84de1ed7b",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "ldsw-cinecatalogo",
+          "configurations": {
+            "android": "1:549479536930:android:f61bb1aae556e523e1ed7b",
+            "ios": "1:549479536930:ios:7b34feb112e4c84de1ed7b",
+            "web": "1:549479536930:web:1db906e58fb1c36fe1ed7b"
+          }
+        }
+      }
+    }
+  }
+}
